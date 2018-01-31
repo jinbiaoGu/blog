@@ -1,0 +1,321 @@
+/* 
+	"Zen" by Michee Rose (www.michee.vrtisworks.com, michee@vrtisworks.com)
+	02/06/04
+	
+	based on the Default WordPress by Dave Shea || http://mezzoblue.com
+	Modifications by Matthew Mullenweg || http://photomatt.net
+*/
+
+/*overall*/
+a {
+	color: #666;
+	text-decoration:none;
+	border-bottom: 1px dashed #999;
+}
+
+a img {
+	border: none;
+}
+
+a:visited {
+	color: #444;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #333;
+}
+
+acronym, abbr, span.caps {
+	font-size: 90%;
+	letter-spacing: .07em;
+	cursor: help;
+}
+
+blockquote {
+	border-left: 3px solid #ccc;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+body {
+	background: #fff url("images/grass.jpg") left top no-repeat;
+	color: #000
+	font-size: 100%;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+cite {
+	font-size: 90%;
+	font-style: normal;
+}
+
+h2 {
+	font: 80% "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	border-bottom: 1px dotted #ccc;
+	margin: 15px 0 2px 0;
+	padding-bottom: 2px;
+}
+
+h3 {
+	font-family: "Times New Roman", Times, serif;
+	border-bottom: dotted 1px #eee;
+	margin-top: 0;
+}
+
+ol#comments li p {
+	font-size: 100%;
+}
+
+p, li, .feedback {
+	font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: -1px;
+}
+
+/*header*/
+#header {
+	font-family: Palatino, Garamond, serif;
+	text-align: left;
+	letter-spacing: 0.2em;
+	line-height: 80%;
+	margin: 0;
+	margin-left:350px;
+	padding-top: 5px;
+	height:100px;
+}
+#header a {
+	color:#000;
+	font-family: Palatino, Garamond, serif;
+	font-size: 1.2em;
+	text-decoration: none;
+	border: none;
+	padding:0;
+}
+#header a:hover {
+	text-decoration: underline;
+}
+
+/*content*/
+#content {
+	border-left: 2px solid #666;
+	padding-left: 2px;
+	margin: 50px 12em 0px 190px;
+	floart:left;
+	width: 600px;
+}
+.post {
+	margin-right: 8em;
+}
+.feedback {
+	color: #ccc;
+	text-align: right;
+}
+.meta {
+	font-size: .75em;
+	border: none;
+}
+.meta, .meta a {
+	color: #808080;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+.meta ul {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meta li {
+	display: inline;
+}
+.storytitle {
+	margin: 0;
+}
+.storytitle a {
+	border: none;
+}
+
+#commentform input, #commentform textarea {
+	background: #fff;
+	border: 1px solid #333;
+}
+
+#commentform textarea {
+	width: 100%;
+}
+
+/*menu*/
+#menu {
+	background: #fff;
+	border-bottom: 1px solid #666;
+	border-left: 1px dotted #ccc;
+	padding: 10px 0 5px 15px;
+	float:right;
+	position: absolute;
+	left: 680px;
+	top: 50px;
+	width: 200px;
+}
+#menu form {
+	margin: 0 0 0 13px;
+}
+#menu input {
+	background: #eee;
+	letter-spacing: -0.05em;
+	border: 1px solid #999;
+	width: 80%;
+}
+#menu ul {
+	color: #ccc;
+	font-weight: bold;
+	text-transform: lowercase;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 3px;
+}
+#menu ul li {
+	font: italic normal 110% 'Times New Roman', Times, serif;
+	letter-spacing: 0.1em;
+	margin-top: 10px;
+	padding-bottom: 2px; /*border-bottom: dotted 1px #ccc;*/
+}
+#menu ul ul {
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 100%;
+	text-align: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul ul li {
+	font: normal normal 70%/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: 0;
+	border: 0;
+	margin-top: 0;
+	padding: 0;
+	padding-left: 12px;
+}
+#menu ul ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#menu ul ul li a:hover {
+	border-bottom: 1px solid #809080;
+}
+#cam {
+	font-size: .5em;
+	text-align: center;
+}
+#calendar {
+	font-size: 14px;
+	border: 0px;
+	margin: 0;
+	width: 90%;
+	empty-cells: show;
+}
+
+.calMonthHeader, .calMonthNav{
+	color: #000;
+	font: 11px Verdana, Arial, serif;
+	padding-top:10px;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+#calendar .calMonthForward, #calendar .calMonthForward>a{
+	padding-left: 5px;
+	text-align: center;
+	border:0px;
+}
+
+#calendar .calMonthBackward, #calendar .calMonthBackward>a{
+	padding-right: 5px;
+	text-align: center;
+	border:0px;
+}
+
+.calDayLink {
+	display: block;
+	text-decoration: none;
+}
+#calendar a:hover {
+	background: #e0e6e0;
+	color: #333;
+}
+
+#calendar td {
+	color: #000;
+	font: normal 10px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	text-align: center;
+	letter-spacing: normal;
+	padding: 0px;
+	
+}
+#calendar td.pad:hover {
+	background: #fff;
+}
+#calendar td:hover, .calMonthToday {
+	background: #eee;
+	color: #bbb;
+}
+
+
+/*footer/credit*/
+.credit {
+	background: #666666;
+	color: #fff;
+	font-size: .9em;
+	text-align: center;
+	margin: 0px;
+	padding: 3px;
+	border-top: double 3px #999;
+	clear:both;
+}
+
+.credit a:link, .credit a:hover {
+	color: #fff;
+}
+.pager {
+	clear:all;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pager a, .pager a:link, .pager a:href, .pager a:hover {
+ text-decoration: none;
+ border: 0px;
+}
+
+.pager .pagerLinkPrevPage, .pagerLink, .pagerLinkNextPage{
+	padding: 2px 6px;
+}
+
+.pager .pagerLinkPrevPage{
+	margin-right:20px;
+}
+.pager .pagerLinkNextPage {
+	margin-left:20px;
+}
+
+.pager .pagerCurrent {
+	padding: 2px 6px; 
+	border-color: #999; 
+	font-weight: bold; 
+	font-size: 13px; 
+	vertical-align: top; 
+	background: #fff; 
+	color: #FF0084;	
+}
